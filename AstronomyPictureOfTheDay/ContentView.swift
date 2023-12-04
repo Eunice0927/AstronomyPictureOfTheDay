@@ -17,8 +17,9 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .offset(x: isMoving ? -700 : 0, y: 0)
-                    .animation(.linear(duration: 10).repeatForever())
-                .ignoresSafeArea()}
+                    .animation(.linear(duration: 20).repeatForever(), value: isMoving)
+                    .ignoresSafeArea()
+            }
         }
         .onAppear() {
             isMoving = true
