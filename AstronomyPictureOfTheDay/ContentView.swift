@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var nasaApi = NasaViewModel.shared
     @State var isMoving: Bool = false
     @State private var selectedDate = Date()
     @State var formattedDate = String()
@@ -41,6 +42,7 @@ struct ContentView: View {
                     
                     Button {
                         formattedDate = setDate(selectedDate)
+                        nasaApi.fetchData(formattedDate)
                     } label: {
                         Text("Go")
                             .frame(width: 83, height: 47)
