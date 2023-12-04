@@ -11,6 +11,9 @@
 		9EBF842B2B1DFEEA006DD2FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */; };
 		9EBF842D2B1DFEEC006DD2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */; };
 		9EBF84302B1DFEEC006DD2FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF842F2B1DFEEC006DD2FA /* Preview Assets.xcassets */; };
+		9EBF84392B1E009B006DD2FA /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF84382B1E009B006DD2FA /* ApiKeys.plist */; };
+		9EBF843B2B1E0127006DD2FA /* NasaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843A2B1E0127006DD2FA /* NasaApi.swift */; };
+		9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843C2B1E0153006DD2FA /* NasaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EBF842F2B1DFEEC006DD2FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EBF84382B1E009B006DD2FA /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		9EBF843A2B1E0127006DD2FA /* NasaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApi.swift; sourceTree = "<group>"; };
+		9EBF843C2B1E0153006DD2FA /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				9EBF84282B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift */,
 				9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */,
+				9EBF843A2B1E0127006DD2FA /* NasaApi.swift */,
+				9EBF843C2B1E0153006DD2FA /* NasaModel.swift */,
+				9EBF84382B1E009B006DD2FA /* ApiKeys.plist */,
 				9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */,
 				9EBF842E2B1DFEEC006DD2FA /* Preview Content */,
 			);
@@ -127,6 +136,7 @@
 			files = (
 				9EBF84302B1DFEEC006DD2FA /* Preview Assets.xcassets in Resources */,
 				9EBF842D2B1DFEEC006DD2FA /* Assets.xcassets in Resources */,
+				9EBF84392B1E009B006DD2FA /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +149,8 @@
 			files = (
 				9EBF842B2B1DFEEA006DD2FA /* ContentView.swift in Sources */,
 				9EBF84292B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift in Sources */,
+				9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */,
+				9EBF843B2B1E0127006DD2FA /* NasaApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
