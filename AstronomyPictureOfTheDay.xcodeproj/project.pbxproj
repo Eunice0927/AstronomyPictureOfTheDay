@@ -16,6 +16,7 @@
 		9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843C2B1E0153006DD2FA /* NasaModel.swift */; };
 		9EBF843F2B1E01C3006DD2FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF843E2B1E01C3006DD2FA /* README.md */; };
 		9EBF84432B1E0483006DD2FA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF84422B1E0483006DD2FA /* .gitignore */; };
+		9EBF84452B1E0576006DD2FA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF84442B1E0576006DD2FA /* ApiKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9EBF843C2B1E0153006DD2FA /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
 		9EBF843E2B1E01C3006DD2FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9EBF84422B1E0483006DD2FA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9EBF84442B1E0576006DD2FA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9EBF84282B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift */,
 				9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */,
 				9EBF843A2B1E0127006DD2FA /* NasaApi.swift */,
+				9EBF84442B1E0576006DD2FA /* ApiKeys.swift */,
 				9EBF843C2B1E0153006DD2FA /* NasaModel.swift */,
 				9EBF84382B1E009B006DD2FA /* ApiKeys.plist */,
 				9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				9EBF84292B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift in Sources */,
 				9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */,
 				9EBF843B2B1E0127006DD2FA /* NasaApi.swift in Sources */,
+				9EBF84452B1E0576006DD2FA /* ApiKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
