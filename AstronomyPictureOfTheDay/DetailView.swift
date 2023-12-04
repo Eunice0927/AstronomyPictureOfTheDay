@@ -40,7 +40,7 @@ struct DetailView: View {
                                     LoadingView(delay: 0.2)
                                     LoadingView(delay: 0.4)
                                 }
-                            }
+                            } //ZStack
                         }
                     }
                 } // video or image view
@@ -63,7 +63,7 @@ struct DetailView: View {
 }
 
 struct LoadingView: View {
-    @State var delay: Double = 0 // 1.
+    @State var delay: Double = 0
     @State var scale: CGFloat = 0.5
     
     var body: some View {
@@ -71,7 +71,7 @@ struct LoadingView: View {
             .frame(width: 40, height: 40)
             .foregroundStyle(.white)
             .scaleEffect(scale)
-            .animation(Animation.easeInOut(duration: 0.6).repeatForever().delay(delay)) // 2.
+            .animation(Animation.easeInOut(duration: 0.6).repeatForever().delay(delay))
             .onAppear {
                 withAnimation {
                     self.scale = 1
