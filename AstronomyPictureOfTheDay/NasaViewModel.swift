@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-class NasaApi: ObservableObject {
-    static let shared = NasaApi()
+class NasaViewModel: ObservableObject {
+    static let shared = NasaViewModel()
     
     @Published var copyright = String()
     @Published var date = String()
