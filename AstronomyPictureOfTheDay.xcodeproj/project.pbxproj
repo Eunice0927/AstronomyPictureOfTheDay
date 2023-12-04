@@ -7,30 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1273BD2B1E14130028F3AE /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1273BC2B1E14130028F3AE /* YouTubeView.swift */; };
 		9EBF84292B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF84282B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift */; };
 		9EBF842B2B1DFEEA006DD2FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */; };
 		9EBF842D2B1DFEEC006DD2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */; };
 		9EBF84302B1DFEEC006DD2FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF842F2B1DFEEC006DD2FA /* Preview Assets.xcassets */; };
 		9EBF84392B1E009B006DD2FA /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF84382B1E009B006DD2FA /* ApiKeys.plist */; };
-		9EBF843B2B1E0127006DD2FA /* NasaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843A2B1E0127006DD2FA /* NasaApi.swift */; };
+		9EBF843B2B1E0127006DD2FA /* NasaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843A2B1E0127006DD2FA /* NasaViewModel.swift */; };
 		9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF843C2B1E0153006DD2FA /* NasaModel.swift */; };
 		9EBF843F2B1E01C3006DD2FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF843E2B1E01C3006DD2FA /* README.md */; };
 		9EBF84432B1E0483006DD2FA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF84422B1E0483006DD2FA /* .gitignore */; };
 		9EBF84452B1E0576006DD2FA /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF84442B1E0576006DD2FA /* ApiKeys.swift */; };
+		9EBF84492B1E0612006DD2FA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF84482B1E0612006DD2FA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E1273BC2B1E14130028F3AE /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		9EBF84252B1DFEEA006DD2FA /* AstronomyPictureOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPictureOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF84282B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayApp.swift; sourceTree = "<group>"; };
 		9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EBF842F2B1DFEEC006DD2FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9EBF84382B1E009B006DD2FA /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
-		9EBF843A2B1E0127006DD2FA /* NasaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApi.swift; sourceTree = "<group>"; };
+		9EBF843A2B1E0127006DD2FA /* NasaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewModel.swift; sourceTree = "<group>"; };
 		9EBF843C2B1E0153006DD2FA /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
 		9EBF843E2B1E01C3006DD2FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9EBF84422B1E0483006DD2FA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9EBF84442B1E0576006DD2FA /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		9EBF84482B1E0612006DD2FA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +71,11 @@
 			children = (
 				9EBF84282B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift */,
 				9EBF842A2B1DFEEA006DD2FA /* ContentView.swift */,
-				9EBF843A2B1E0127006DD2FA /* NasaApi.swift */,
+				9EBF84482B1E0612006DD2FA /* DetailView.swift */,
+				9EBF843A2B1E0127006DD2FA /* NasaViewModel.swift */,
 				9EBF84442B1E0576006DD2FA /* ApiKeys.swift */,
 				9EBF843C2B1E0153006DD2FA /* NasaModel.swift */,
+				9E1273BC2B1E14130028F3AE /* YouTubeView.swift */,
 				9EBF84382B1E009B006DD2FA /* ApiKeys.plist */,
 				9EBF842C2B1DFEEC006DD2FA /* Assets.xcassets */,
 				9EBF842E2B1DFEEC006DD2FA /* Preview Content */,
@@ -159,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EBF842B2B1DFEEA006DD2FA /* ContentView.swift in Sources */,
+				9EBF84492B1E0612006DD2FA /* DetailView.swift in Sources */,
 				9EBF84292B1DFEEA006DD2FA /* AstronomyPictureOfTheDayApp.swift in Sources */,
 				9EBF843D2B1E0153006DD2FA /* NasaModel.swift in Sources */,
-				9EBF843B2B1E0127006DD2FA /* NasaApi.swift in Sources */,
+				9E1273BD2B1E14130028F3AE /* YouTubeView.swift in Sources */,
+				9EBF843B2B1E0127006DD2FA /* NasaViewModel.swift in Sources */,
 				9EBF84452B1E0576006DD2FA /* ApiKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
