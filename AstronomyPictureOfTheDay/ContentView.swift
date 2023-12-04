@@ -12,9 +12,14 @@ struct ContentView: View {
     @State var isMoving: Bool = false
     @State private var selectedDate = Date()
     @State var formattedDate = String()
+    @State var tag: Int?
     
     var body: some View {
         ZStack {
+            NavigationLink(destination: DetailView(), tag: 1, selection: self.$tag) {
+                DetailView()
+            }
+            
             GeometryReader { geo in
                 Image("blueAndPurpleGalaxyByJeremyThomas")
                     .resizable()
@@ -43,6 +48,7 @@ struct ContentView: View {
                     Button {
                         formattedDate = setDate(selectedDate)
                         nasaApi.fetchData(formattedDate)
+                        self.tag = 1
                     } label: {
                         Text("Go")
                             .frame(width: 83, height: 47)
