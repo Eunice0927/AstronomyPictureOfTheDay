@@ -42,33 +42,30 @@ struct ContentView: View {
                     .colorInvert()
                 
                 Spacer().frame(height: 50)
-                
-                ZStack {
                     
-                    Button {
-                        formattedDate = setDate(selectedDate)
-                        nasaApi.fetchData(formattedDate)
-                        self.tag = 1
-                    } label: {
-                        Text("Go")
-                            .frame(width: 83, height: 47)
-                            .background(.black)
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
-                            .foregroundStyle(.white)
-                            .opacity(0.54)
-                            .font(.system(size: 20, weight: .bold))
-                    }
+                Button {
+                    formattedDate = setDate(selectedDate)
+                    nasaApi.fetchData(formattedDate)
+                    self.tag = 1
+                } label: {
+                    Text("Go")
+                        .frame(width: 83, height: 47)
+                        .background(.black)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .foregroundStyle(.white)
+                        .opacity(0.54)
+                        .font(.system(size: 20, weight: .bold))
                 }
                 
                 Spacer().frame(height: 100)
-            }
+            } //VStack
             .onAppear() {
                 isMoving = true
             }
             .onDisappear() {
                 isMoving = false
             }
-        }
+        } //ZStack
     }
     
     func setDate(_ selectedDate: Date) -> String {
