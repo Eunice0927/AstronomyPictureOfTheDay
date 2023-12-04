@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var isMoving: Bool = false
     @State private var selectedDate = Date()
+    @State var formattedDate = String()
     
     var body: some View {
         ZStack {
@@ -39,7 +40,7 @@ struct ContentView: View {
                 ZStack {
                     
                     Button {
-
+                        formattedDate = setDate(selectedDate)
                     } label: {
                         Text("Go")
                             .frame(width: 83, height: 47)
@@ -60,6 +61,15 @@ struct ContentView: View {
                 isMoving = false
             }
         }
+    }
+    
+    func setDate(_ selectedDate: Date) -> String {
+        let year = selectedDate.formatted(Date.FormatStyle().year(.defaultDigits))
+        let day = selectedDate.formatted(Date.FormatStyle().day(.twoDigits))
+        let month = selectedDate.formatted(Date.FormatStyle().month(.twoDigits))
+        
+        print("\(year)-\(month)-\(day)")
+        return "\(year)-\(month)-\(day)"
     }
 }
 
