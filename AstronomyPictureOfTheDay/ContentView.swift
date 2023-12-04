@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isMoving: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            GeometryReader { geo in
+                Image("blueAndPurpleGalaxyByJeremyThomas")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .offset(x: isMoving ? -700 : 0, y: 0)
+                    .animation(.linear(duration: 10).repeatForever())
+                .ignoresSafeArea()}
         }
-        .padding()
+        .onAppear() {
+            isMoving = true
+        }
+        .onDisappear() {
+            isMoving = false
+        }
     }
 }
 
