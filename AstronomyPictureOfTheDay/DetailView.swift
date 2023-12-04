@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     @StateObject var nasaApi = NasaViewModel.shared
+    @State private var isLoading = false
     
     var body: some View {
         ZStack {
@@ -33,6 +34,12 @@ struct DetailView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: geo.size.width)
+                                
+                                HStack(alignment: .center) {
+                                    LoadingView()
+                                    LoadingView(delay: 0.2)
+                                    LoadingView(delay: 0.4)
+                                }
                             }
                         }
                     }
@@ -52,6 +59,24 @@ struct DetailView: View {
                 } //ScrollView
             } //VStack
         } //ZStack
+    }
+}
+
+struct LoadingView: View {
+    @State var delay: Double = 0 // 1.
+    @State var scale: CGFloat = 0.5
+    
+    var body: some View {
+        Circle()
+            .frame(width: 40, height: 40)
+            .foregroundStyle(.white)
+            .scaleEffect(scale)
+            .animation(Animation.easeInOut(duration: 0.6).repeatForever().delay(delay)) // 2.
+            .onAppear {
+                withAnimation {
+                    self.scale = 1
+                }
+            }
     }
 }
 
