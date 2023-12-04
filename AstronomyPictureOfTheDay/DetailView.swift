@@ -24,7 +24,9 @@ struct DetailView: View {
                 
                 GeometryReader { geo in
                     if nasaApi.mediaType == "video" {
-
+                        YouTubeView(videoId: nasaApi.videoID ?? "")
+                            .frame(width: geo.size.width, height: 285)
+                            .aspectRatio(contentMode: .fit)
                     } else {
                         AsyncImage(url: URL(string: nasaApi.sourceUrl ?? "")) { image in
                             image.resizable()

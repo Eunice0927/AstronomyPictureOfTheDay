@@ -16,6 +16,7 @@ class NasaViewModel: ObservableObject {
     @Published var mediaType = String()
     @Published var title = String()
     @Published var sourceUrl: String?
+    @Published var videoID: String?
     
     private init() { }
     
@@ -67,11 +68,22 @@ class NasaViewModel: ObservableObject {
                     self.mediaType = apiResponse.mediaType
                     self.title = apiResponse.title
                     self.sourceUrl = apiResponse.url
+                    self.videoID = self.getYoutubeId(youtubeUrl: apiResponse.url ?? "")
                 }
             } catch let error {
                 print(error.localizedDescription)
             }
         }
         task.resume()
+    }
+    
+    func getYoutubeId(youtubeUrl: String) -> String? {
+        let startIndex = youtubeUrl.index(after: youtubeUrl.lastIndex(of: "/")!)
+        let spaceHolder = youtubeUrl.index(after: startIndex)
+        let endindex = youtubeUrl.lastIndex(of: "?") ?? youtubeUrl.firstIndex(of: "=")
+        
+        let id = String(youtubeUrl[startIndex..<(endindex ?? spaceHolder)])
+        print(id)
+        return id
     }
 }
