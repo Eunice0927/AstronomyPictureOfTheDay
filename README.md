@@ -18,3 +18,6 @@ Pick a date to see the astronomy picture of the day
 |디테일 뷰: 로딩|<img width="210" alt="디테일 뷰 이미지 로딩 애니메이션" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/e7eb148e-ce46-4d08-baa3-dc5b155b36a9">|<img width="210" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/e4145adb-8749-4596-8024-396b821405c9">|
 |디테일 뷰: 이미지|<img width="210" alt="디테일 뷰: 이미지" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/74673018-90e8-426c-b6b5-415d46b1a56b">|<img width="210" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/1a84bc22-44fb-4149-a855-b9aba5f0bbe2">|
 |디테일 뷰: 비디오|<img width="210" alt="디테일 뷰: 비디오" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/ad7a33e3-189e-4940-ba19-d255f2dbb8a5">|<img width="210" src="https://github.com/Eunice0927/AstronomyPictureOfTheDay/assets/106911494/b1b6aac7-eee4-4e30-8e94-30103b441f89">|
+
+## 추가 Develop하고싶은 내용
+- [ ] 북마크 기능
