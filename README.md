@@ -3,13 +3,13 @@ Pick a date to see the astronomy picture of the day
 
 ## 프로젝트 개요
 - [Nasa API](https://api.nasa.gov/)를 사용한 뷰를 만들었습니다.
-- 앱에 배경 이미지 asset이 추가되었습니다.
-- 날짜를 선택하고 "Go" 버튼을 누르면 DetailView로 연결됩니다.
-- api의 mediaType이 video라면 WebKit을 사용한 뷰를 그립니다.
-- ContentView의 배경 이미지가 가로로 이동하는 애니메이션이 적용되었습니다.
-- DetailView의 AsyncImage의 placeholder에 크기가 변하는 동그라미 이미지가 보입니다.
-- DetailView의 하단 설명은 ScrollView입니다.
 - Api에서 copyright, date, explanation, mediaType, title, url을 가져옵니다.
+- 프로젝트에 배경 이미지 asset이 추가되었습니다.
+- 날짜를 선택하고 "Go" 버튼을 누르면 DetailView로 연결됩니다.
+- ContentView의 배경 이미지가 가로로 이동하는 애니메이션이 적용되었습니다.
+- DetailView의 AsyncImage가 로딩되는 동안 placeholder에 크기가 변하는 동그라미 이미지가 보입니다.
+- api의 mediaType이 video라면 WebKit을 사용한 뷰를 그립니다.
+- DetailView 하단의 사진 설명은 ScrollView입니다.
 
 ## ScreenShots
 |설명|이미지|GIF|
